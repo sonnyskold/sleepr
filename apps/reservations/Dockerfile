@@ -34,7 +34,7 @@ COPY package.json ./
 COPY yarn.lock ./
 
 # Install Yarn in the production stage
-# RUN npm install -g yarn
+RUN npm install -g yarn
 
 # Install only production dependencies
 RUN yarn install --production
