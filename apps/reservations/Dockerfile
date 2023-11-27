@@ -39,7 +39,7 @@ RUN npm install -g yarn
 # Install only production dependencies
 RUN yarn install --production
 
-# Copy built artifacts from the development stage
+# Copy built artifacts from the development stage1
 COPY --from=development /usr/src/app/dist ./dist
 
 CMD ["node", "dist/apps/reservations/main"]
